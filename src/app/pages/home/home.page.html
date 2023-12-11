@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      
+      <ion-menu-button></ion-menu-button>
+
+    </ion-buttons>
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  @for (item of [1,2,3,4]; track $index) {
+    <ion-card style="height: 300px;"></ion-card>
+  }
+</ion-content>
