@@ -64,8 +64,16 @@
   .rec{
       cursor: pointer;
   }
-  
 
+  .tooltip-pie {
+    background: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  
 /* Core CSS required for Ionic components to work properly */
 @import "@ionic/angular/css/core.css";
 

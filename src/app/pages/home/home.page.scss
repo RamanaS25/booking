@@ -1,0 +1,22 @@
+ion-card{
+    --background: rgba(0, 0, 0, 0.555);
+    border-radius: 10px;
+}
+
+ion-toolbar{
+    --background: rgba(0, 0, 0, 0.178);
+}
+
+ion-content {
+    --background: url(../../../assets/bg/AIUgNzMk-wallha.com.jpg)  no-repeat center/cover fixed;
+   
+  }
+
+  .hover{
+    transition: transform 0.3s ease;
+    
+  }
+
+.hover:hover{
+    transform: translateY(-5px);
+}

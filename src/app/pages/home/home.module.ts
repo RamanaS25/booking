@@ -8,6 +8,8 @@ import { HomePageRoutingModule } from './home-routing.module';
 
 import { HomePage } from './home.page';
 import { HeatmapComponent } from 'src/app/components/heatmap/heatmap.component';
+import { PieChartComponent } from 'src/app/components/piechart/piechart.component';
+import { HeatComponent } from 'src/app/components/heat-map/heat-map.component';
 
 @NgModule({
   imports: [
@@ -15,7 +17,9 @@ import { HeatmapComponent } from 'src/app/components/heatmap/heatmap.component';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    HeatmapComponent
+    HeatmapComponent,
+    PieChartComponent,
+    HeatComponent
   ],
   declarations: [HomePage]
 })
