@@ -9,6 +9,79 @@
  * https://ionicframework.com/docs/layout/global-stylesheets
  */
 
+ /*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+ .month-label, .day-label {
+    fill: #ffffff;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Optional: Helps to see the bounding box of text for debugging */
+  .month-label, .day-label {
+    stroke: #fff;
+    stroke-width: 0.5;
+    cursor: pointer;
+  }
+  
+  .svg-content-responsive {
+    display: block;
+    width: 100%; /* Use the full width of the container */
+    height: auto; /* Adjust the height to maintain aspect ratio */
+    margin: 0 auto; /* Center the SVG horizontally */
+  }
+  
+  
+  #tooltip {
+      position: absolute;
+      text-align: center;
+      width: auto;
+      height: auto;
+      padding: 8px;
+      font: 12px sans-serif;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      pointer-events: none;
+      opacity: 0.9;
+      visibility: hidden; /* Initially hidden */
+      z-index: 10;
+      color: black;;
+       transition: visibility 0.2s, opacity 0.2s ease-in-out;
+      color: black; /* Make sure the text is readable over the white background */
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  }
+  
+  .rec{
+      cursor: pointer;
+  }
+  
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
 /* Core CSS required for Ionic components to work properly */
 @import "@ionic/angular/css/core.css";
 

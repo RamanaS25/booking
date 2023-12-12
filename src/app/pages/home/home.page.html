@@ -11,7 +11,29 @@
 
 <ion-content [fullscreen]="true">
 
-  @for (item of [1,2,3,4]; track $index) {
-    <ion-card style="height: 300px;"></ion-card>
-  }
+<ion-grid>
+  <ion-row>
+    <ion-col size="2">
+       <ion-card style="height: 60vh;"></ion-card>
+
+       <ion-card style="height: 30vh;"></ion-card>
+    </ion-col>
+
+    <ion-col size="10">
+
+      <ion-card style="height: 60vh;"></ion-card>
+      
+      <ion-card style="height: 30vh;">
+        <ion-card-content>
+          <app-heatmap [year]='2023' [commits]=" [{ date: '2023-04-08', count: 10 }, { date: '2023-06-18', count: 5 }]"></app-heatmap>
+              
+        </ion-card-content>
+      </ion-card>
+
+    </ion-col>
+
+  </ion-row>
+</ion-grid>
+
+
 </ion-content>
